@@ -1,96 +1,112 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title> Confeitaria</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato|Poppins|Roboto|Roboto+Condensed|Roboto+Slab" rel="stylesheet">
-    <link rel="stylesheet" href="styles_config.css">
-  </head>
-  <body>
-<h1> Monte seu Bolo </h1>
-<section class="configure">
-<div class="linha">
-<!-- Massa -->
-<p class="title"> Massas </p>
-<!-- Chocolate -->
-<div>
-<img src="images/massa_chocolate.png" alt="Chocolate">
-<input type="Radio" name="massa" checked> </input>
-<p class="nome"> Chocolate</p>
-<p class="preco">R$ 80,00 </p>
-</div>
-<!-- Baunilha -->
-<div>
-<img src="images/massa_baunilha.png" alt="Baunilha">
-<input type="Radio" name="massa"> </input>
-<p class="nome"> Baunilha</p>
-<p class="preco">R$ 70,00 </p>
-</div>
-<!-- Morango -->
-<div>
-<img src="images/bolo_morango.png" alt="Morango">
-<input type="Radio" name="massa"> </input>
-<p class="nome"> Morango</p>
-<p class="preco">R$ 65,00 </p>
-</div>
-</div>
-<br>
+<head>
+  <meta charset="utf-8">
+  <title> Confeitaria</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato|Poppins|Roboto|Roboto+Condensed|Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="styles_config.css">
+</head>
+<body>
+  <h1> Monte seu Bolo </h1>
 
-<div class="linha">
-  <!-- Recheio -->
-  <p class="title"> Recheio </p>
-  <!-- Chocolate -->
-  <div>
-  <img src="images/massa_chocolate.png" alt="Chocolate">
-  <input type="Radio" name="recheio" checked> </input>
-  <p class="nome"> Chocolate</p>
-  <p class="preco">R$ 80,00 </p>
-  </div>
-  <!-- Baunilha -->
-  <div>
-  <img src="images/massa_baunilha.png" alt="Baunilha">
-  <input type="Radio" name="recheio"> </input>
-  <p class="nome"> Baunilha</p>
-  <p class="preco">R$ 70,00 </p>
-  </div>
-  <!-- Morango -->
-  <div>
-  <img src="images/bolo_morango.png" alt="Morango">
-  <input type="Radio" name="recheio"> </input>
-  <p class="nome"> Morango</p>
-  <p class="preco">R$ 65,00 </p>
-  </div>
-</div>
-<br>
+  <section class="configure">
+    <div class="linha">
+      <!-- Massas -->
+      <p class="title"> Massas </p>
 
-<div class="linha">
-  <!-- Cobertura -->
-  <p class="title"> Cobertura </p>
-  <!-- Chocolate -->
-  <div>
-  <img src="images/massa_chocolate.png" alt="Chocolate">
-  <input type="Radio" name="cobertura" checked> </input>
-  <p class="nome"> Chocolate</p>
-  <p class="preco">R$ 80,00 </p>
-  </div>
-  <!-- Baunilha -->
-  <div>
-  <img src="images/massa_baunilha.png" alt="Baunilha">
-  <input type="Radio" name="cobertura"> </input>
-  <p class="nome"> Baunilha</p>
-  <p class="preco">R$ 70,00 </p>
-  </div>
-  <!-- Morango -->
-  <div>
-  <img src="images/bolo_morango.png" alt="Morango">
-  <input type="Radio" name="cobertura"> </input>
-  <p class="nome"> Morango</p>
-  <p class="preco">R$ 65,00 </p>
-  </div>
-</div>
+      <!-- Chocolate -->
+      <div class="massa-selector">
+        <!-- <img src="images/massa_chocolate.png" alt="Chocolate"> -->
+        <input id="massa01" type="radio" name="massa" value="m01" />
+        <label class="massa-bolo m01"    for="massa01">    </label>
+        <p class="nome"> Chocolate</p>
+        <p class="preco">R$ 80,00 </p>
+      </div>
 
-</section>
+      <!-- Baunilha -->
+      <div class="massa-selector">
+        <!-- <img src="images/massa_baunilha.png" alt="Baunilha"> -->
+        <input id="massa02" type="radio" name="massa" value="m02"> </input>
+        <label class="massa-bolo m02"    for="massa02">
+        <p class="nome"> Baunilha</p>
+        <p class="preco">R$ 70,00 </p>
+      </div>
 
-    <script src="scripts_config.js"> </script>
-  </body>
+      <!-- Morango -->
+      <div class="massa-selector">
+        <!-- <img src="images/bolo_morango.png" alt="Morango"> -->
+        <input id="massa03" type="radio" name="massa" value="m03"> </input>
+        <label class="massa-bolo m03"    for="massa03">
+        <p class="nome"> Morango</p>
+        <p class="preco">R$ 65,00 </p>
+      </div>
+    </div>
+    <br>
+
+    <div class="linha">
+      <!-- Recheio -->
+      <p class="title"> Recheio </p>
+
+      <!-- Chocolate -->
+      <div class="recheio-selector">
+        <!-- <img src="images/massa_chocolate.png" alt="Chocolate"> -->
+        <input id="recheio01" type="radio" name="recheio" value="r01"> </input>
+        <label class="recheio-bolo r01"    for="recheio01">
+        <p class="nome"> Chocolate</p>
+        <p class="preco">R$ 80,00 </p>
+      </div>
+
+      <!-- Baunilha -->
+      <div class="recheio-selector">
+        <!-- <img src="images/massa_baunilha.png" alt="Baunilha"> -->
+        <input id="recheio02" type="radio" name="recheio" value="r02"> </input>
+        <label class="recheio-bolo r02"    for="recheio02">
+        <p class="nome"> Baunilha</p>
+        <p class="preco">R$ 70,00 </p>
+      </div>
+
+      <!-- Morango -->
+      <div class="recheio-selector">
+        <!-- <img src="images/bolo_morango.png" alt="Morango"> -->
+        <input id="recheio03" type="radio" name="recheio" value="r03"> </input>
+        <label class="recheio-bolo r03"    for="recheio03">
+        <p class="nome"> Morango</p>
+        <p class="preco">R$ 65,00 </p>
+      </div>
+    </div>
+    <br>
+
+    <div class="linha">
+      <!-- Cobertura -->
+      <p class="title"> Cobertura </p>
+
+      <!-- Chocolate -->
+      <div class="cobertura-selector">
+        <!-- <img src="images/massa_chocolate.png" alt="Chocolate"> -->
+        <input id="cobertura01" type="radio" name="cobertura" value="c01"> </input>
+        <p class="nome"> Chocolate</p>
+        <p class="preco">R$ 80,00 </p>
+      </div>
+
+      <!-- Baunilha -->
+      <div class="cobertura-selector">
+        <!-- <img src="images/massa_baunilha.png" alt="Baunilha"> -->
+        <input id="cobertura02" type="radio" name="cobertura" value="c02"> </input>
+        <p class="nome"> Baunilha</p>
+        <p class="preco">R$ 70,00 </p>
+      </div>
+
+      <!-- Morango -->
+      <divclass="cobertura-selector">
+        <!-- <img src="images/bolo_morango.png" alt="Morango"> -->
+        <input id="cobertura03" type="radio" name="cobertura" value="c03"> </input>
+        <p class="nome"> Morango</p>
+        <p class="preco">R$ 65,00 </p>
+      </div>
+    </div>
+
+  </section>
+
+  <script src="scripts_config.js"> </script>
+</body>
 </html>

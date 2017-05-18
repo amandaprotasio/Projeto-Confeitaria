@@ -63,7 +63,74 @@ h1{
   padding: 30px;
 }
 
-input[type="Radio"] {
+.configure input{
+  margin:0;
+  padding:0;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+}
+
+.m01{
+  background-image:url("images/massa_chocolate.png");
+  }
+.m02{
+  background-image:url("images/massa_baunilha.png");
+}
+.m03{
+  background-image:url("images/bolo_morango.png");
+}
+
+.r01{
+  background-image:url("images/massa_chocolate.png");
+  }
+.r02{
+  background-image:url("images/massa_baunilha.png");
+}
+.r03{
+  background-image:url("images/bolo_morango.png");
+}
+
+.c01{
+  background-image:url("images/massa_chocolate.png");
+  }
+.c02{
+  background-image:url("images/massa_baunilha.png");
+}
+.c03{
+  background-image:url("images/bolo_morango.png");
+}
+
+.massa-selector input:active +.massa-bolo{
+  opacity: .9;
+}
+.massa-selector input:checked +.massa-bolo{
+  -webkit-filter: none;
+  -moz-filter: none;
+  filter: none;
+}
+.massa-bolo{
+  cursor:pointer;
+  background-size:contain;
+  background-repeat:no-repeat;
+  display:inline-block;
+  width:200px;
+  height:200px;
+  -webkit-transition: all 100ms ease-in;
+  -moz-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
+  -webkit-filter: brightness(1)  opacity(.7);
+  -moz-filter: brightness(1)  opacity(.7);
+  filter: brightness(1)  opacity(.7);
+}
+.massa-bolo:hover{
+  -webkit-filter:  opacity(1);
+  -moz-filter: opacity(1);
+  filter: opacity(1);
+}
+
+
+/*input[type="Radio"] {
   margin-top: 104%;
   float: left;
-  }
+  }*/
