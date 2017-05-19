@@ -13,7 +13,8 @@ var inputCobertura3 = document.querySelector('#cobertura03');
 var massas    = document.getElementsByName('massa');
 var recheio   = document.getElementsByName('recheio');
 var cobertura = document.getElementsByName('cobertura');
-// var massaSelecionada = 'branco';
+
+var valorTotal = 0;
 
 inputMassa1.addEventListener('click', descobrirMassaSelecionada );
 inputMassa2.addEventListener('click', descobrirMassaSelecionada );
@@ -31,19 +32,21 @@ inputCobertura3.addEventListener('click', descobrirCoberturaSelecionada );
 function descobrirMassaSelecionada(){
   massaSelecionada = this.id;
 console.log(massaSelecionada);
-}
+};
 
 function descobrirRecheioSelecionado(){
   recheioSelecionado = this.id;
   console.log(recheioSelecionado);
-}
+};
 
 function descobrirCoberturaSelecionada() {
-  coberturaSelecionada = this.Id;
+  coberturaSelecionada = this.id;
   console.log(coberturaSelecionada);
-}
+};
+
 function calcularValorBolo(){
 
+ // Valor Massa Selecionada
   if (massaSelecionada == 'massa01') {
     valorMassa = 25;
 
@@ -52,7 +55,35 @@ function calcularValorBolo(){
 
   } else if (massaSelecionada == 'massa03') {
     valorMassa = 35;
-  }
+  };
 
+
+
+// Valor Recheio Selecionado
+if (recheioSelecionado == 'recheio01') {
+  valorRecheio = 25;
+
+} else if (recheioSelecionado == 'recheio02') {
+  valorRecheio = 30;
+
+} else if (recheioSelecionado == 'recheio03') {
+  valorRecheio = 35;
+};
+
+// Valor Cobertura Selecionada
+if (coberturaSelecionada == 'cobertura01') {
+  valorCobertura = 25;
+
+} else if (coberturaSelecionado == 'cobertura02') {
+  valorCobertura = 30;
+
+} else if (coberturaSelecionado == 'cobertura03') {
+  valorCobertura = 35;
+};
+
+
+valorTotal = valorMassa + valorRecheio + valorCobertura ;
+
+console.log(valorTotal);
 
 }
