@@ -1,18 +1,69 @@
 body{
-  margin:0;
+
   /*font-family: 'Lato', sans-serif;
   font-family: 'Roboto Condensed', sans-serif;
   font-family: 'Roboto Slab', serif;
   font-family: 'Poppins', sans-serif;*/
   font-family: 'Roboto', sans-serif;
-  max-width: 1000px;
-  margin-left: 1%;
+  /*max-width: 1000px;
+  margin-left: 10%;*/
+  /*background-color: #FFBC85;*/
 }
 
+/* CONFIGURAÇÃO DA BARRA DE NAVEGAÇÃO*/
+.menu{
+  background-color: #FF6A54;
+  position: fixed;
+  width: 99%;
+  height: 59px;
+  z-index: +1;
+  margin: 0 0 0 0;
+  font-weight: bold;
+  font-style: italic;
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Baloo', cursive;
+  /*font-family: 'Barrio', cursive;
+  font-family: 'Baloo', cursive;
+  font-family: 'Roboto', sans-serif;*/
+  }
+
+.menu img {
+  width: 6.5%;
+  margin-left: 1%;
+  margin-top: 0.5%;
+  float: left;
+  }
+  .menu span.home{
+    margin-left: 49%;
+    line-height: 59px;
+    }
+  .menu span.build{
+    margin-left: 3%;
+    line-height: 59px;
+    }
+  .menu span.about{
+  margin-left: 3%;
+  }
+
+.menu span.contact{
+  margin-left: 3%;
+}
+
+/*.menu{
+  max-width: 1000px;
+}*/
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+/*---------------------------------------------------------------------------*/
+
 h1{
-  color: #257AED;
+  color: #A73A68;
   margin: 0;
-  /*text-align: center;*/
+  text-align: left;
   font-size: 50px;
 }
 
@@ -22,13 +73,15 @@ h1{
     -webkit-transform-origin: 100% 100%;
     margin-left: -22%;
     margin-right: 2%;
-    background-color: blue;
-    color: white;
-    font-size: 24px;
+    /*background-color: #FFF268;*/
+    color: #FF9C11;
+    font-size: 32px;
+    font-weight: bold;
     height: 10%;
     margin-top: 26%;
     width: 27%;
     text-align: center;
+    font-family: 'Roboto Slab', serif;
 }
 
 .linha{
@@ -36,7 +89,8 @@ h1{
   display: flex;
   border-radius: 10px;
   border: 0.5px solid #888282;
-
+  background-color: white;
+  width:70%;
 }
 
 .linha div .nome{
