@@ -9,13 +9,49 @@
   <body>
     <nav class="menu">
     <img src="images/logo_branco.png" alt="Damn">
-    <span class="home"> HOME </span>
-    <span class="build"> MONTE SEU BOLO </span>
-    <span class="about"> SOBRE </span>
-    <span class="contact"> CONTATO </span>
+    <a href="index.html"> <span class="home"> HOME </span> </a>
+    <a href="config.html"> <span class="build"> MONTE SEU BOLO </span> </a>
+    <a href="#empresa"> <span class="about"> SOBRE </span> </a>
+    <a href='mailto:contato@damn.com.br'><span class="contact"> CONTATO </span></a>
   </nav>
 
-  <img src="images/bolo_bao.jpg" alt="Bolo">
-    <script src="scripts.js"></script>
+
+<p class="texto_banner"> Venha experimentar os nossos bolos </p>
+<section class="banner">
+
+  <img src="images/bolo_bao.jpg" alt="Bolo" class="ativa">
+  <img src="images/festa.jpg" alt="Festa">
+  <img src="images/cupcake.jpg" alt="Cupcake">
+
+
+</section>
+
+<br>
+
+<section id="empresa">
+<p class="about2"> A DAMN! é uma empresa criada por 4 jovens fissurados em bolos que querem compartilhar um pouco dessa fascinação. Localizada no cosmopolita São Paulo, produzimos não somente bolos mas uma experiência na desgutação de massas e recheios, aliadas a alegria de ver o sorriso no rosto de nossos clientes </p>
+
+<p class="about2">ipsos Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+
+</section>
+    <script>
+    var imagensBanner = document.querySelectorAll(".banner img");
+    // No JavaScript, quando damos um espaço, significa que queremos que procure dentro da classe.
+
+    var imagensBannerAtiva = 0;
+
+    function trocarImagemBanner(){
+      imagensBanner[imagensBannerAtiva].classList.remove('ativa');
+      imagensBannerAtiva++
+
+      if(imagensBannerAtiva>=imagensBanner.length){
+        imagensBannerAtiva=0;
+      }
+      imagensBanner[imagensBannerAtiva].classList.add('ativa');
+    }
+
+    setInterval(trocarImagemBanner,2500);
+
+    </script>
   </body>
 </html>
