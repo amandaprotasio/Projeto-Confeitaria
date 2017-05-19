@@ -63,6 +63,12 @@ h1{
   padding: 30px;
 }
 
+input[type="radio"] {
+  margin-top: 104%;
+  float: left;
+  }
+
+
 .configure input{
   margin:0;
   padding:0;
@@ -101,10 +107,10 @@ h1{
   background-image:url("images/bolo_morango.png");
 }
 
-.massa-selector input:active +.massa-bolo{
+.radio-selector input:active +.massa-bolo{
   opacity: .9;
 }
-.massa-selector input:checked +.massa-bolo{
+.radio-selector input:checked +.massa-bolo{
   -webkit-filter: none;
   -moz-filter: none;
   filter: none;
@@ -128,9 +134,3 @@ h1{
   -moz-filter: opacity(1);
   filter: opacity(1);
 }
-
-
-/*input[type="Radio"] {
-  margin-top: 104%;
-  float: left;
-  }*/
