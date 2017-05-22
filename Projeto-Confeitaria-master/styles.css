@@ -55,10 +55,10 @@ a {
 /*DISPLAY BANNER*/
 
 .banner img{
-  width: 100% /*important*/;
+  width: 102% /*important*/;
   height: auto;
   display: none;
-  margin-top: 80px;
+  /*margin-top: 80px;*/
   margin-left: -8px;
 }
 img.ativa{
