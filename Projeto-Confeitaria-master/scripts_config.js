@@ -14,7 +14,14 @@ var massas    = document.getElementsByName('massa');
 var recheio   = document.getElementsByName('recheio');
 var cobertura = document.getElementsByName('cobertura');
 
+var paragrafoValorTotal = document.querySelector('p.valor-total');
 var valorTotal = 0;
+var valorMassa = 0;
+var valorRecheio = 0;
+var valorCobertura = 0;
+var massaSelecionada;
+var recheioSelecionado;
+var coberturaSelecionada;
 
 inputMassa1.addEventListener('click', descobrirMassaSelecionada );
 inputMassa2.addEventListener('click', descobrirMassaSelecionada );
@@ -31,58 +38,65 @@ inputCobertura3.addEventListener('click', descobrirCoberturaSelecionada );
 
 function descobrirMassaSelecionada(){
   massaSelecionada = this.id;
-console.log(massaSelecionada);
+  console.log(massaSelecionada);
+  calcularValorBolo();
 };
 
 function descobrirRecheioSelecionado(){
   recheioSelecionado = this.id;
   console.log(recheioSelecionado);
+  calcularValorBolo();
 };
 
 function descobrirCoberturaSelecionada() {
   coberturaSelecionada = this.id;
   console.log(coberturaSelecionada);
+  calcularValorBolo();
 };
 
 function calcularValorBolo(){
 
  // Valor Massa Selecionada
   if (massaSelecionada == 'massa01') {
-    valorMassa = 25;
+    valorMassa = 80;
 
   } else if (massaSelecionada == 'massa02') {
-    valorMassa = 30;
+    valorMassa = 70;
 
   } else if (massaSelecionada == 'massa03') {
-    valorMassa = 35;
+    valorMassa = 65;
   };
 
 
 
 // Valor Recheio Selecionado
 if (recheioSelecionado == 'recheio01') {
-  valorRecheio = 25;
+  valorRecheio = 80;
 
 } else if (recheioSelecionado == 'recheio02') {
-  valorRecheio = 30;
+  valorRecheio = 70;
 
 } else if (recheioSelecionado == 'recheio03') {
-  valorRecheio = 35;
+  valorRecheio = 65;
 };
 
 // Valor Cobertura Selecionada
 if (coberturaSelecionada == 'cobertura01') {
-  valorCobertura = 25;
+  valorCobertura = 80;
 
-} else if (coberturaSelecionado == 'cobertura02') {
-  valorCobertura = 30;
+} else if (coberturaSelecionada == 'cobertura02') {
+  valorCobertura = 70;
 
-} else if (coberturaSelecionado == 'cobertura03') {
-  valorCobertura = 35;
+} else if (coberturaSelecionada == 'cobertura03') {
+  valorCobertura = 65;
 };
 
 
 valorTotal = valorMassa + valorRecheio + valorCobertura ;
+paragrafoValorTotal.innerHTML = valorTotal;
+var stringValor = 'Valor Total: R$';
+paragrafoValorTotal.innerHTML = stringValor + paragrafoValorTotal.innerHTML;
+
 
 console.log(valorTotal);
 
