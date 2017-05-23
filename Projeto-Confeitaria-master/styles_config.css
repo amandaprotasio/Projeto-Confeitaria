@@ -8,6 +8,7 @@ body{
   /*max-width: 1000px;
   margin-left: 10%;*/
   /*background-color: #FFBC85;*/
+  background-color: #FFFAF0;
 }
 
 /* CONFIGURAÇÃO DA BARRA DE NAVEGAÇÃO*/
@@ -90,7 +91,8 @@ h1{
   display: flex;
   border-radius: 10px;
   border: 0.5px solid #888282;
-  background-color: white;
+  /*background-color: white;*/
+  background-color: #FFFAF0;
   width: 72%;
 }
 
@@ -213,6 +215,8 @@ input[type="radio"] {
   width: 330px;
   font-size: 15px;
   font-family: 'Roboto';
+  background-color: #FFFAF0;
+  border-radius: 5px;
 }
 
 .data{
@@ -227,4 +231,6 @@ input[type="radio"] {
   width: 252px;
   font-size: 15px;
   font-family: 'Roboto';
+  background-color: #FFFAF0;
+  border-radius: 5px;  
 }
