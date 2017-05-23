@@ -93,7 +93,8 @@ h1{
   border: 0.5px solid #888282;
   /*background-color: white;*/
   background-color: #FFFAF0;
-  width: 72%;
+  width: 80%;
+  margin-left: 10.5%;
 }
 
 .linha div .nome{
@@ -201,10 +202,16 @@ input[type="radio"] {
 
 #button{
   color: crimson;
+  font-size: 25px;
+  font-weight: bold;
+  width: 27%;
+  text-align: center;
+  font-family: 'Roboto Slab', sans-serif;
+  margin-left: 26%;
 }
 
 .email{
-  padding-left: 345px;
+  padding-left: 280px;
   font-size: 22px;
   font-weight: bold;
   color: crimson;
@@ -220,7 +227,7 @@ input[type="radio"] {
 }
 
 .data{
-  padding-left: 345px;
+  padding-left: 280px;
   font-size: 22px;
   font-weight: bold;
   color: crimson;
@@ -232,5 +239,9 @@ input[type="radio"] {
   font-size: 15px;
   font-family: 'Roboto';
   background-color: #FFFAF0;
-  border-radius: 5px;  
+  border-radius: 5px;
+}
+
+#footer{
+  margin-left: 20%;
 }
