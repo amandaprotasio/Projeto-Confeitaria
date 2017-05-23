@@ -56,7 +56,7 @@ function descobrirCoberturaSelecionada() {
 
 function calcularValorBolo(){
 
- // Valor Massa Selecionada
+  // Valor Massa Selecionada
   if (massaSelecionada == 'massa01') {
     valorMassa = 80;
 
@@ -69,35 +69,39 @@ function calcularValorBolo(){
 
 
 
-// Valor Recheio Selecionado
-if (recheioSelecionado == 'recheio01') {
-  valorRecheio = 80;
+  // Valor Recheio Selecionado
+  if (recheioSelecionado == 'recheio01') {
+    valorRecheio = 80;
 
-} else if (recheioSelecionado == 'recheio02') {
-  valorRecheio = 70;
+  } else if (recheioSelecionado == 'recheio02') {
+    valorRecheio = 70;
 
-} else if (recheioSelecionado == 'recheio03') {
-  valorRecheio = 65;
-};
+  } else if (recheioSelecionado == 'recheio03') {
+    valorRecheio = 65;
+  };
 
-// Valor Cobertura Selecionada
-if (coberturaSelecionada == 'cobertura01') {
-  valorCobertura = 80;
+  // Valor Cobertura Selecionada
+  if (coberturaSelecionada == 'cobertura01') {
+    valorCobertura = 80;
 
-} else if (coberturaSelecionada == 'cobertura02') {
-  valorCobertura = 70;
+  } else if (coberturaSelecionada == 'cobertura02') {
+    valorCobertura = 70;
 
-} else if (coberturaSelecionada == 'cobertura03') {
-  valorCobertura = 65;
-};
-
-
-valorTotal = valorMassa + valorRecheio + valorCobertura ;
-paragrafoValorTotal.innerHTML = valorTotal;
-var stringValor = 'Valor Total: R$';
-paragrafoValorTotal.innerHTML = stringValor + paragrafoValorTotal.innerHTML;
+  } else if (coberturaSelecionada == 'cobertura03') {
+    valorCobertura = 65;
+  };
 
 
-console.log(valorTotal);
+  valorTotal = valorMassa + valorRecheio + valorCobertura ;
+  paragrafoValorTotal.innerHTML = valorTotal;
+  var stringValor = 'VALOR TOTAL - R$ ';
+  paragrafoValorTotal.innerHTML = stringValor + paragrafoValorTotal.innerHTML;
+
+
+  console.log(valorTotal);
+
+}
+
+function enviarPedido() {
 
 }
