@@ -5,6 +5,14 @@
   <title> Confeitaria</title>
   <link href="https://fonts.googleapis.com/css?family=Lato|Poppins|Roboto|Roboto+Condensed|Roboto+Slab|Baloo|Barrio" rel="stylesheet">
   <link rel="stylesheet" href="styles_config.css">
+
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+     (function(){
+        emailjs.init("user_ClzK5qkXCmq9eFtWt6TUn");
+     })();
+  </script>
+
 </head>
 <body>
   <nav class="menu">
@@ -129,7 +137,17 @@
       <p class="valor-total title float"></p>
     </div>
     <div>
-      <button class="title float" onclick="enviarPedido()">Enviar pedido</button>
+      <label class="email" for="email">Contato: </label>
+      <input id="email" class="float" placeholder="Digite seu email.." >
+    </div>
+    <br>
+    <div>
+      <label class="data" for="dataEntrega">Data de Entrega: </label>
+      <input id="dataEntrega"class="float" type="date">
+    </div>
+    <br>
+    <div>
+      <button id="button" class="title float" onclick="enviarPedido()">Enviar pedido</button>
     </div>
 
 

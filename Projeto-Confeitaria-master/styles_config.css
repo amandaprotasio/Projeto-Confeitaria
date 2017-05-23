@@ -196,3 +196,35 @@ input[type="radio"] {
   float: none;
   margin-left: 10px;
 }
+
+#button{
+  color: crimson;
+}
+
+.email{
+  padding-left: 345px;
+  font-size: 22px;
+  font-weight: bold;
+  color: crimson;
+}
+
+#email{
+  height: 31px;
+  width: 330px;
+  font-size: 15px;
+  font-family: 'Roboto';
+}
+
+.data{
+  padding-left: 345px;
+  font-size: 22px;
+  font-weight: bold;
+  color: crimson;
+}
+
+#dataEntrega{
+  height: 31px;
+  width: 252px;
+  font-size: 15px;
+  font-family: 'Roboto';
+}
